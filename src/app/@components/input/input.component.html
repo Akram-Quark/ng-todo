@@ -1,0 +1,18 @@
+<form class="row mt-5 mb-5 justify-content-center w-100">
+  <div class="col-auto">
+    <label class="visually-hidden">add todo</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="type you'r tuts..."
+      [(ngModel)]="text"
+      name="text"
+    />
+    <p *ngIf="text.length > 0">add "{{ text }}" to you'r todolist</p>
+  </div>
+  <div class="col-auto">
+    <button (click)="onClick()" type="submit" class="btn btn-warning mb-3">
+      Add
+    </button>
+  </div>
+</form>

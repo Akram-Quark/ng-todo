@@ -1,0 +1,6 @@
+<app-todo
+  class="w-100 align-center"
+  *ngFor="let todo of todos"
+  [todo]="todo"
+  (deleted)="deletTodo($event)"
+></app-todo>
